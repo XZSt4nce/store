@@ -27,7 +27,6 @@ contract store {
         uint256 amount;
         uint256 production_date;
         uint32 storage_life_days;
-        Role received_as;
     }
 
     struct Record {
@@ -194,7 +193,7 @@ contract store {
             products[msg.sender][currentRole[msg.sender]][_hashProduct].amount += _amount;
         } else {
             uint256 _hashTitle = generateHash(_title);
-            products[msg.sender][currentRole[msg.sender]][_hashProduct] = Product(_title, _cost_wei, _amount, _currentDay, _storage_life, Role.SUPPLIER);
+            products[msg.sender][currentRole[msg.sender]][_hashProduct] = Product(_title, _cost_wei, _amount, _currentDay, _storage_life);
             productsTitles[msg.sender][currentRole[msg.sender]].push(_title);
             productsCost[msg.sender][currentRole[msg.sender]][_hashTitle].push(_cost_wei);
             productionTimes[msg.sender][currentRole[msg.sender]][_hashTitle].push(_currentDay);
@@ -438,7 +437,7 @@ contract store {
             products[msg.sender][currentRole[msg.sender]][_hashProduct].amount += _amount;
         } else {
             uint256 _hashTitle = generateHash(_title);
-            products[msg.sender][currentRole[msg.sender]][_hashProduct] = Product(_title, _cost_wei, _amount, _production_date, _storage_life, currentRole[msg.sender]);
+            products[msg.sender][currentRole[msg.sender]][_hashProduct] = Product(_title, _cost_wei, _amount, _production_date, _storage_life);
             productsTitles[msg.sender][currentRole[msg.sender]].push(_title);
             productsCost[msg.sender][currentRole[msg.sender]][_hashTitle].push(_cost_wei);
             productionTimes[msg.sender][currentRole[msg.sender]][_hashTitle].push(_production_date);

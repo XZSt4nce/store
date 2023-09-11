@@ -485,11 +485,6 @@
 								"internalType": "uint32",
 								"name": "storage_life_days",
 								"type": "uint32"
-							},
-							{
-								"internalType": "enum store.Role",
-								"name": "received_as",
-								"type": "uint8"
 							}
 						],
 						"internalType": "struct store.Product[]",
@@ -536,11 +531,6 @@
 								"internalType": "uint32",
 								"name": "storage_life_days",
 								"type": "uint32"
-							},
-							{
-								"internalType": "enum store.Role",
-								"name": "received_as",
-								"type": "uint8"
 							}
 						],
 						"internalType": "struct store.Product[]",
@@ -722,11 +712,11 @@
 	},
 	"sources": {
 		"contracts/store.sol": {
-			"keccak256": "0x9454c502cdfeaef5ab08825f059220803cebbb0466436926be1fec7587825ed8",
+			"keccak256": "0xdbf00e593fa1a273feea5893e28a9f4ffb1b480c259ef1c87eb9f4490a8d7381",
 			"license": "UNLICENSE",
 			"urls": [
-				"bzz-raw://c42ebc3378203b88f93f3ee70c412c6d483c8314a5b005585cf30b3d4cd254a4",
-				"dweb:/ipfs/QmPAYbGzahYaE3sHE6JY265B4RaXPDkUcVe5uLw3w8zu9s"
+				"bzz-raw://293c2d9a3dfa17e8e299e1124e419080c7b46c9247b6007f5119e781e8e910d4",
+				"dweb:/ipfs/QmUaSkECqY6mxj3yvXNzqL3TUoU14mfr1GyWj3oAEBaBKa"
 			]
 		},
 		"hardhat/console.sol": {
